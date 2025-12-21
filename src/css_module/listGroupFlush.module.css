@@ -1,0 +1,12 @@
+.homeLatest ul {
+  max-height: 250px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.homeLatest ul ::before{
+    color: red;
+}
+.homeLatest ul li a{
+    font-size: 1.25rem !important;
+}

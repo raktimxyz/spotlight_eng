@@ -1,0 +1,38 @@
+.article-meta {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    margin: 20px 0;
+}
+
+.articleContent {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.articleContent p {
+    margin-bottom: 1.5rem;
+}
+
+.articleContent img {
+    max-width: 100%;
+    margin: 2rem 0;
+}
+
+.authorImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.socialShare a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    color: white !important;
+    margin-right: 8px;
+}

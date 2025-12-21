@@ -1,0 +1,26 @@
+.NavTabsArea ul {
+  max-height: 500px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.NavTabsArea ul li{
+    position: relative;
+}
+.NavTabsArea ul li::before{
+    color: red;
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+
+.NavTabsArea ul li a{
+    font-size: 1.2rem !important;
+}
+
+.nav-link{
+    color:#000 !important;
+}
+.tabActive{
+    background-color: #20419C !important;
+    color:#fff !important;
+}

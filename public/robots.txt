@@ -1,0 +1,8 @@
+# Crawl spotlight.com,
+
+User-agent: *
+Allow: /
+Allow: /*.js
+Allow: /*.css
+Allow: /*.jpg
+Allow: /ads.txt

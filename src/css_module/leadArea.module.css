@@ -1,0 +1,12 @@
+.playButton {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    background: #BA1223;
+    height: 35px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 5px 0;
+}

@@ -1,0 +1,17 @@
+.authorImage {
+    display: flex;
+    align-items: center;
+}
+
+.circleBase {
+    border-radius: 50%;
+    border: 3px solid #DC3545;
+    overflow: hidden;
+}
+
+.circleBase img {
+    border-radius: 50%;
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: cover;
+}

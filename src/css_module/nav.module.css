@@ -1,0 +1,12 @@
+.menuPadding {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+@media only screen and (max-width: 1380px) {
+  .menuPadding {
+      padding-right: .8rem !important;
+      padding-left: .8rem !important;
+  }
+
+}
