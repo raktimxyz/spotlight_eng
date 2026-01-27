@@ -9,7 +9,7 @@ const Page = () => {
                 <div className="about">
                     <div className="row">
                         <div className="col-lg-6">
-                            <h3>Editor & Publlisher: Morshed Noman</h3>
+                            <h3>Acting Editor: Morshed Noman</h3>
                             <p>Address: 10/2, Gausia Kashem Center, 9th Floor, Fakirapul Calvert Road, Motijheel, Dhaka-1000</p>
                             <p>Phone: 01971897452</p>
                             <p>Email: : editor@spotlight.com</p>

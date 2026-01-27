@@ -6,8 +6,9 @@ const Footer = () => {
         <div className="container">
             <div className="row">
                 <div className="col-md-4 footer-col">
-                    <h2 className="footer-title mb-2">
-                        <span className="text-danger">Editor & Publisher:</span> Morshed Noman
+                    <h2 className="footer-title mb-2"> 
+
+                        <span className="text-danger">Acting Editor:</span> Morshed Noman
                     </h2>
                     <p>Email: editor.spotlightnews@gmail.com</p>
                     <p>Phone: 01971897452</p>

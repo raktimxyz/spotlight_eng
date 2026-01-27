@@ -133,7 +133,7 @@ const ArticleComponent = ({ newsData }) => {
                 src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v23.0"
             />
 
-            <div class="fb-comments" data-href="{`${getUrl}`}" data-width="100%" data-numposts="2"></div>
+            <div className="fb-comments" data-href="{`${getUrl}`}" data-width="100%" data-numposts="2"></div>
 
         </div>
     </section>);
