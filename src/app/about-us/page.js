@@ -62,7 +62,7 @@ export default async function TodaysNews({ searchParams }) {
 
                     <p className="fs-5">In addition to the original reporting, we will also highlight the global perspective through selected messages from our journalists as well as local news organizations and information from international media.</p>
 
-                    <p className="fs-4"><b className="fs-5">Acting Editor:</b> Morshed Noman</p>
+                    {/*<p className="fs-4"><b className="fs-5">Acting Editor:</b> Morshed Noman</p>*/}
 
                 </div>
  
