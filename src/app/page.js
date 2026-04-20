@@ -17,6 +17,9 @@ import Section9 from "@/components/section9";
 import GalleryPhoto from "@/components/GalleryPhoto";
 import Link from 'next/link';
 import VideoGallery from '@/components/videoGallery';
+import Script from 'next/script';
+
+import SiteBlockAdvertisements from "@/utils/SiteBlockAdvertisements";
 
 export const revalidate = 60;
 
@@ -150,6 +153,7 @@ const HomePage = async () => {
             */}
              
 
+            <SiteBlockAdvertisements advertisements={ data.banner }/>
 
 
 

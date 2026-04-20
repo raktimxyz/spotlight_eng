@@ -440,3 +440,116 @@ footer .policy-link {
 .head-prefix{
     color:#b5000f;
 }
+
+
+#siteblock.site-block {
+    display          : none;
+    position         : fixed;
+    z-index          : 10000;
+    padding-top      : 7%;
+    left             : 0;
+    top              : 0;
+    width            : 100%;
+    height           : 100%;
+    text-align       : center;
+    overflow         : auto;
+    background-color : rgba(0, 0, 0, .6)
+}
+
+#siteblock .siteblock-content {
+    margin                     : auto;
+    display                    : table;
+    position                   : relative;
+    -webkit-animation-name     : zoom;
+    -webkit-animation-duration : .6s;
+    animation-name             : zoom;
+    animation-duration         : .6s;
+    max-width                  : 90%
+}
+
+#siteblock .siteblock-content img {
+    position : relative
+}
+
+#siteblock .block-close {
+    position      : absolute;
+    background    : #f8f8f8;
+    opacity       : 1;
+    right         : -20px;
+    top           : -20px;
+    width         : 35px;
+    height        : 35px;
+    line-height   : 35px;
+    border-radius : 50%;
+    z-index       : 1
+}
+
+#siteblock .block-close:focus, #siteblock .block-close:hover {
+    color           : #fff;
+    background      : var(--second-site-color);
+    text-decoration : none;
+    cursor          : pointer
+}
+
+#adTimeCountdown {
+    position    : absolute;
+    color       : #ffffff;
+    z-index     : 1;
+    top         : -60px;
+    font-weight : 700;
+    left        : 50%;
+    transform   : translateX(-50%)
+}
+
+@media only screen and (max-width : 991px) {
+    #siteblock.site-block {
+        padding-top : 50%;
+    }
+}
+
+
+.breakingSticky {
+    position: fixed !important;
+    bottom: 0;
+    padding: 10px;
+    background-color: #20419C;
+    color: #fff;
+    width: 100%;
+    z-index: 9999;
+}
+.breakingSticky .scrollContent{ 
+    background-color: #20419C;
+    color: #fff;
+}
+.breakingSticky .ttt{ 
+    width: 10%;
+    float: left;
+    font-size: 22px;
+}
+.breakingSticky .scrollContainer{ 
+    width: 88%;
+    float: left;
+}
+
+.breakingSticky .scrollItem{ 
+    border-right: 1px solid #fff;
+    padding: 0 20px ;
+
+}
+@media only screen and (max-width : 691px) { 
+    .breakingSticky .ttt{ 
+        width: 30%;
+        float: left;
+        font-size: 19px;
+    }
+    .breakingSticky .scrollContainer{ 
+        width: 70%;
+        float: left;
+        font-size: 19px;
+    }
+    .breakingSticky .scrollContent{ 
+        background-color: #20419C;
+        color: #fff;
+        font-size: 19px;
+    }
+}
