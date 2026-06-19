@@ -6,3 +6,7 @@ Allow: /*.js
 Allow: /*.css
 Allow: /*.jpg
 Allow: /ads.txt
+
+
+Sitemap: https://english.spotlightnews24.com/sitemap.xml
+Sitemap: https://english.spotlightnews24.com/news-sitemap.xml

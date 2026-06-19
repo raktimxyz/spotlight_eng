@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 export async function GET() {
   try {
     const resss = await fetch(
-              `${process.env.NEXT_PUBLIC_API_URL}/sitemap-gnews?page=1`,
+              `${process.env.NEXT_PUBLIC_API_URL}/sitemap-gnews`,
               { cache: "no-store" }
           );
 
