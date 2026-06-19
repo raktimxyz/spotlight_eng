@@ -3,15 +3,15 @@ import ViewImg from "../../components/viewImg";
 import Link from "next/link";
 
 export const metadata = {
-    title: "সব খবর | স্পটলাইট",
-    description: "স্পষ্টতা, স্পষ্টভাষিতা ও বিশ্বাসযোগ্যতার অঙ্গীকার নিয়ে একটি স্বাধীন সংবাদমাধ্যম হিসেবে গণমানুষের কাছে গ্রহণযোগ্যতা অর্জন করে  দেশের গণমাধ্যম জগতে শীর্ষ সংবাদ ব্র্যান্ড হওয়ার লক্ষ্য নিয়ে যাত্রা শুরু করেছে স্পটলাইট ।",
-    keywords: ["স্পটলাইট", "কিওয়ার্ড২", "কিওয়ার্ড৩"],
+    title: "All News | Spotlight",
+    description: "স্পষ্টতা, স্পষ্টভাষিতা ও বিশ্বাসযোগ্যতার অঙ্গীকার নিয়ে একটি স্বাধীন সংবাদমাধ্যম হিসেবে গণমানুষের কাছে গ্রহণযোগ্যতা অর্জন করে  দেশের গণমাধ্যম জগতে শীর্ষ সংবাদ ব্র্যান্ড হওয়ার লক্ষ্য নিয়ে যাত্রা শুরু করেছে Spotlight ।",
+    keywords: ["Spotlight", "কিওয়ার্ড২", "কিওয়ার্ড৩"],
     authors: [{ name: "আপনার নাম" }],
     creator: "আপনার নাম",
-    publisher: "স্পটলাইট",
+    publisher: "Spotlight",
     openGraph: {
-        title: "সব খবর | স্পটলাইট",
-        description: "সব খবর | স্পটলাইট",
+        title: "All News | Spotlight",
+        description: "All News | Spotlight",
         images: [
             {
                 url: "https://example.com/og-image.jpg",
@@ -29,7 +29,10 @@ export const metadata = {
 };
 
 export default async function TodaysNews({ searchParams }) {
-    const page = parseInt(searchParams?.page) || 1;
+    const awaitedParams = await searchParams;
+
+    const page = parseInt(awaitedParams.page) || 1; 
+    //const page = parseInt(searchParams?.page) || 1;
 
     try {
         const res = await fetch(
@@ -51,7 +54,7 @@ export default async function TodaysNews({ searchParams }) {
 
         return (
             <div className="container my-5">
-                <h2 className="mb-4 text-center">আজকের খবর</h2>
+                <h2 className="mb-4 text-center">Today's News</h2>
 
                 <div className="row">
                     {newsList.length > 0 ? (
@@ -151,7 +154,7 @@ export default async function TodaysNews({ searchParams }) {
                 {lastPage <= 1 && (
                     <div className="text-center mt-4">
                         <small className="text-muted">
-                            সব খবর এই পেজেই দেখানো হয়েছে। (মোট {total}টি)
+                            All News এই পেজেই দেখানো হয়েছে। (মোট {total}টি)
                         </small>
                     </div>
                 )}
